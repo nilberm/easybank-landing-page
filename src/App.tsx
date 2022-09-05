@@ -1,9 +1,9 @@
+import Router from "./router";
+
+import "./global.css";
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header"></header>
-    </div>
-  );
+  return <Router />;
 }
 
 export default App;
