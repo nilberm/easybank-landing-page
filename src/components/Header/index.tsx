@@ -1,7 +1,8 @@
-import { Nav, Logo, NavLink, NavMenu, Bars, NavBtn, NavBtnLink } from "./style";
+import { Nav, Logo, NavLink, NavMenu, Bars, NavBtn } from "./style";
 
 import logo from "../../assets/logo.svg";
 import { useEffect, useState } from "react";
+import { InviteBtn } from "../Elements";
 
 const Header = () => {
   const [handleMenuActivation, setHandleMenuActivation] = useState(false);
@@ -61,7 +62,7 @@ const Header = () => {
       </NavMenu>
 
       <NavBtn>
-        <NavBtnLink to="invite">Request Invite</NavBtnLink>
+        <InviteBtn to="/invite" />
       </NavBtn>
     </Nav>
   );
