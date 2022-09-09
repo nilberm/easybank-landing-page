@@ -6,8 +6,12 @@ export const Section = styled.section`
   align-items: center;
   justify-content: center;
   gap: 2rem;
-
+  padding: 4rem 0;
   background: var(--Very-Light-Gray);
+
+  @media (min-width: 768px) {
+    padding: 4rem calc((100vw - 1000px) / 2);
+  }
 `;
 
 export const GridCard = styled.div`
@@ -15,6 +19,10 @@ export const GridCard = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 `;
 export const Card = styled.div`
   display: flex;
@@ -28,6 +36,10 @@ export const Card = styled.div`
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   img {
     width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    width: 250px;
   }
 `;
 
