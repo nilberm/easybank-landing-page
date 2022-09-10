@@ -11,7 +11,7 @@ export const Nav = styled.nav`
   align-items: center;
   height: 80px;
   min-width: 320px;
-  padding: 0.5rem calc((100vw - 1000px) / 2);
+  padding: 0.5rem calc((100vw - 1200px) / 2);
   z-index: 1000;
   background: #fff;
 `;

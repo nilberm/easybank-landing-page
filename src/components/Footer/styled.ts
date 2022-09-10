@@ -8,7 +8,13 @@ export const FooterContainer = styled.footer`
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  padding: 3rem 2rem;
+  padding: 0 calc((100vw - 1200px) / 2);
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 280px;
+  }
 `;
 
 export const LogosContainer = styled.div`
@@ -16,6 +22,11 @@ export const LogosContainer = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 2rem;
+
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
+    padding-left: 2rem;
+  }
 `;
 
 export const Logo = styled.div`
@@ -36,6 +47,15 @@ export const NavContainer = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 1rem;
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    padding-left: 4rem;
+    column-gap: 8rem;
+    width: 100%;
+  }
 `;
 
 export const NavLink = styled(Link)`
@@ -55,6 +75,12 @@ export const BtnAndCopyrights = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+
+  @media screen and (min-width: 768px) {
+    align-items: flex-end;
+    width: 100%;
+    padding-right: 2rem;
+  }
 `;
 
 export const Copyright = styled.div`

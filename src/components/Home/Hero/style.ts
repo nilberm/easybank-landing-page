@@ -4,10 +4,10 @@ import backgroundHeroImageDesktop from "../../../assets/bg-intro-desktop.svg";
 
 export const Section = styled.section`
   min-width: 320px;
-  padding: 0 calc((100vw - 1000px) / 2) 4rem calc((100vw - 1000px) / 2);
+  padding: 0 calc((100vw - 1200px) / 2) 4rem calc((100vw - 1200px) / 2);
 
   @media (min-width: 768px) {
-    padding: 0 calc((100vw - 1000px) / 2);
+    padding: 0 calc((100vw - 1200px) / 2);
   }
 `;
 

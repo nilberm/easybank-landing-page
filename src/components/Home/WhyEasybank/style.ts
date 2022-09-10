@@ -8,7 +8,7 @@ export const Section = styled.section`
   gap: 3rem;
   background: var(--Light-Grayish-Blue);
 
-  padding: 4rem calc((100vw - 1000px) / 2);
+  padding: 4rem calc((100vw - 1200px) / 2);
 
   @media (min-width: 768px) {
     align-items: flex-start;
