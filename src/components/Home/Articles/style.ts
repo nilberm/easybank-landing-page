@@ -16,10 +16,14 @@ export const Section = styled.section`
 
 export const GridCard = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   width: 100%;
   grid-gap: 2rem;
   padding: 0 2rem;
+
+  @media (max-width: 425px) {
+    padding: 0;
+  }
 `;
 export const Card = styled.div`
   display: flex;
@@ -47,6 +51,10 @@ export const TextContainer = styled.div`
   justify-content: center;
   align-items: flex-start;
   gap: 1rem;
+
+  @media (max-width: 425px) {
+    padding: 4rem 2rem;
+  }
 
   span {
     font-size: 0.8rem;
